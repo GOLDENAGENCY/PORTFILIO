@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOLDEN AGENCY Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('2.JPG');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #ffd700;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px 20px;
+            text-align: center;
+            color: #333;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo img {
+            max-width: 100px; /* تعديل حجم الشعار */
+            border-radius: 50%;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #ffd700;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #333;
+        }
+
+        #hero {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            color: #ffd700;
+            text-align: center;
+        }
+
+        #hero .overlay {
+            background-color: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        #hero .content {
+            position: relative;
+            z-index: 2;
+        }
+
+        section {
+            padding: 80px 20px;
+            text-align: center;
+            background-color: rgba(43, 43, 43, 0.8);
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+
+        section img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #projects .project-gallery {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        #projects .project {
+            background-color: #333;
+            border: 1px solid #333;
+            border-radius: 8px;
+            margin: 10px;
+            padding: 20px;
+            max-width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #contact form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: 0 auto;
+            text-align: right;
+        }
+
+        #contact form label {
+            margin: 10px 0 5px;
+        }
+
+        #contact form input,
+        #contact form textarea {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #333;
+            margin-bottom: 20px;
+        }
+
+        #contact form button {
+            background-color: #000;
+            color: #ffd700;
+            border: none;
+            padding: 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #ffd700;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="00.jpg" alt="GOLDEN AGENCY Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">نبذة</a></li>
+                <li><a href="#projects">مشاريعنا</a></li>
+                <li><a href="#goals">أهدافنا</a></li>
+                <li><a href="#contact">تواصل معنا</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1>GOLDEN AGENCY</h1>
+            <p>نحن نجعل النجاح مضمونًا</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>GOLDEN AGENCY</h2>
+        <img src="3.PNG" alt="نبذة عن المكتب" width="293" height="213">
+        <p> متخصصون في خدمات الماركتينج، إدارة المشاريع، والحملات الإعلانية على جميع المنصات.</p>
+    </section>
+
+    <section id="projects">
+        <h2>أعمالنا</h2>
+        <div class="projects-container">
+            <div class="project">
+              <img src="4.jpg" alt="مشروع 1" width="293" height="213">
+                <h3>مشروع التسويق الرقمي لشركة X</h3>
+                <p>قمنا بت</p>
+                <div class="project"> <img src="3.png" alt="مشروع 2" width="293" height="213">
+                  <h3>إدارة حملة إعلانية لمنصة Y</h3>
+                  <p>تمت إدارة حملة إعلانية ناجحة لمنصة Y، مما زاد عدد المستخدمين النشطين بمقدار 50 ألف مستخدم.</p>
+                </div>
+                <p>طوير استراتيجية تسويق رقمية شاملة أدت إلى زيادة مبيعات شركة X بنسبة 35% خلال 6 أشهر.</p>
+</div>
+            <div class="project">
+                <img src="00.jpg" alt="مشروع 3" width="293" height="213">
+              <h3>تطوير هوية بصرية لعلامة Z</h3>
+                <p>تصميم هوية بصرية فريدة عززت من وجود العلامة Z في السوق وجعلتها مميزة عن المنافسين.</p>
+</div>
+    </section>
+
+    <section id="goals">
+        <h2>أهدافنا</h2>
+<img src="00.jpg" alt="أهداف المكتب" width="293" height="213">
+        <p>هدفنا هو تحقيق النجاح المضمون لعملائنا من خلال خطط تسويقية متكاملة.</p>
+        <div class="goals-container">
+            <div class="goal">
+              <img src="00.jpg" alt="هدف 1" width="293" height="213">
+                <h3>زيادة الوعي بالعلامة التجارية</h3>
+                <p>نهدف إلى تعزيز مكانة علامتك التجارية في السوق وزيادة الوعي بها بين العملاء المستهدفين.</p>
+            </div>
+            <div class="goal">
+              <img src="00.jpg" alt="هدف 2" width="293" height="213">
+                <h3>تحقيق أعلى عائد على الاستثمار</h3>
+                <p>نعمل على تطوير استراتيجيات تسويقية مبتكرة لزيادة العائد على الاستثمار وتحقيق أهدافك المالية.</p>
+            </div>
+            <div class="goal">
+                <img src="00.jpg" alt="هدف 3" width="293" height="213">
+                <h3>تحسين تجربة العملاء</h3>
+                <p>نسعى جاهدين لتحسين تجربة العملاء من خلال تقديم خدمات متميزة وحلول مبتكرة.</p>
+</div>
+    
+
+<section id="contact">
+        <h2>تواصل معنا</h2>
+        <img src="00.jpg" alt="تواصل معنا" width="300" height="152">
+       <div class="contact-info">
+        <h2>معلومات التواصل</h2>
+        <p>البريد الإلكتروني: info@goldenagency.com</p>
+        <p>رقم الهاتف: 01142793583 / 01553831092</p>
+        <p>العنوان: القاهرة اوتوستراد مايو </p>
+  </div>
+
+
+</section>
+
+    <footer>
+        <p>© 2024 GOLDEN AGENCY. جميع الحقوق محفوظة.</p>
+    </footer>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const hero = document.querySelector('#hero');
+            const heroHeight = hero.clientHeight;
+
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > heroHeight - 50) {
+                    document.querySelector('header').classList.add('scrolled');
+                } else {
+                    document.querySelector('header').classList.remove('scrolled');
+                }
+            });
+        });
+
+        const form = document.querySelector('form');
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('شكرًا لتواصلك معنا!');
+        });
+    </script>
+</body>
+</html>
