@@ -9,7 +9,7 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url('2.JPG');
+            background-image: url('2.jpg');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -32,7 +32,7 @@
         }
 
         header .logo img {
-            max-width: 100px; /* تعديل حجم الشعار */
+            max-width: 100px;
             border-radius: 50%;
         }
 
@@ -99,13 +99,14 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
-        #projects .project-gallery {
+        #projects .projects-container, #goals .goals-container {
             display: flex;
             justify-content: space-around;
+			 flex-direction: row-reverse;
             flex-wrap: wrap;
         }
 
-        #projects .project {
+        .project, .goal {
             background-color: #333;
             border: 1px solid #333;
             border-radius: 8px;
@@ -179,69 +180,69 @@
 
     <section id="about">
         <h2>GOLDEN AGENCY</h2>
-        <img src="3.PNG" alt="نبذة عن المكتب" width="293" height="213">
-        <p> متخصصون في خدمات الماركتينج، إدارة المشاريع، والحملات الإعلانية على جميع المنصات.</p>
+        <img src="00.jpg" alt="نبذة عن المكتب">
+        <p>متخصصون في خدمات الماركتينج، إدارة المشاريع، والحملات الإعلانية على جميع المنصات.</p>
     </section>
 
     <section id="projects">
         <h2>أعمالنا</h2>
         <div class="projects-container">
             <div class="project">
-              <img src="4.jpg" alt="مشروع 1" width="293" height="213">
-                <h3>مشروع التسويق الرقمي لشركة X</h3>
-                <p>قمنا بت</p>
-                <div class="project"> <img src="3.png" alt="مشروع 2" width="293" height="213">
-                  <h3>إدارة حملة إعلانية لمنصة Y</h3>
-                  <p>تمت إدارة حملة إعلانية ناجحة لمنصة Y، مما زاد عدد المستخدمين النشطين بمقدار 50 ألف مستخدم.</p>
-                </div>
-                <p>طوير استراتيجية تسويق رقمية شاملة أدت إلى زيادة مبيعات شركة X بنسبة 35% خلال 6 أشهر.</p>
-</div>
+                <h3>مشروع التسويق الرقمي لشركة</h3>
+                <img src="4.jpg" alt="مشروع 1">
+                <p>طورنا استراتيجية تسويق رقمي لزيادة المبيعات بنسبة 35% خلال 6 شهور.</p>
+            </div>
             <div class="project">
-                <img src="00.jpg" alt="مشروع 3" width="293" height="213">
-              <h3>تطوير هوية بصرية لعلامة Z</h3>
-                <p>تصميم هوية بصرية فريدة عززت من وجود العلامة Z في السوق وجعلتها مميزة عن المنافسين.</p>
-</div>
+                <h3>إدارة حملة إعلانية لمنصة</h3>
+                <img src="3.png" alt="مشروع 2">
+                <p>أدرنا حملة إعلانية ناجحة زودت عدد المستخدمين النشطين بـ 50 ألف مستخدم.</p>
+            </div>
+            <div class="project">
+                <h3>تطوير هوية بصرية لعلامة</h3>
+                <img src="00.jpg" alt="مشروع 3">
+                <p>صممنا هوية بصرية مميزة عززت مكانة العلامة التجارية في السوق.</p>
+            </div>
+        </div>
     </section>
 
     <section id="goals">
         <h2>أهدافنا</h2>
-<img src="00.jpg" alt="أهداف المكتب" width="293" height="213">
-        <p>هدفنا هو تحقيق النجاح المضمون لعملائنا من خلال خطط تسويقية متكاملة.</p>
+        <img src="00.jpg" alt="الهدف الرئيسي" class="main-goal">
+        <p>هدفنا الرئيسي هو ضمان نجاح عملائنا من خلال خطط تسويقية شاملة ومتكاملة.</p>
         <div class="goals-container">
             <div class="goal">
-              <img src="00.jpg" alt="هدف 1" width="293" height="213">
                 <h3>زيادة الوعي بالعلامة التجارية</h3>
-                <p>نهدف إلى تعزيز مكانة علامتك التجارية في السوق وزيادة الوعي بها بين العملاء المستهدفين.</p>
+                <img src="00.jpg" alt="هدف 1">
+                <p>نعمل على تعزيز مكانة علامتك التجارية وزيادة الوعي بين العملاء المستهدفين.</p>
             </div>
             <div class="goal">
-              <img src="00.jpg" alt="هدف 2" width="293" height="213">
                 <h3>تحقيق أعلى عائد على الاستثمار</h3>
-                <p>نعمل على تطوير استراتيجيات تسويقية مبتكرة لزيادة العائد على الاستثمار وتحقيق أهدافك المالية.</p>
+                <img src="00.jpg" alt="هدف 2">
+                <p>نطور استراتيجيات تسويقية مبتكرة لزيادة العائد على الاستثمار وتحقيق أهدافك المالية.</p>
             </div>
             <div class="goal">
-                <img src="00.jpg" alt="هدف 3" width="293" height="213">
                 <h3>تحسين تجربة العملاء</h3>
-                <p>نسعى جاهدين لتحسين تجربة العملاء من خلال تقديم خدمات متميزة وحلول مبتكرة.</p>
-</div>
-    
+                <img src="00.jpg" alt="هدف 3">
+                <p>نسعى لتحسين تجربة العملاء من خلال تقديم خدمات مميزة وحلول مبتكرة.</p>
+            </div>
+        </div>
+    </section>
 
-<section id="contact">
+    <section id="contact">
         <h2>تواصل معنا</h2>
-        <img src="00.jpg" alt="تواصل معنا" width="300" height="152">
-       <div class="contact-info">
-        <h2>معلومات التواصل</h2>
-        <p>البريد الإلكتروني: info@goldenagency.com</p>
-        <p>رقم الهاتف: 01142793583 / 01553831092</p>
-        <p>العنوان: القاهرة اوتوستراد مايو </p>
-  </div>
-
-
-</section>
+        <img src="00.jpg" alt="تواصل معنا">
+        <div class="contact-info">
+            <h3>معلومات التواصل</h3>
+            <p>البريد الإلكتروني: info@goldenagency.com</p>
+            <p>رقم الهاتف: 01142793583 / 01553831092</p>
+            <p>العنوان: القاهرة، أوتوستراد مايو</p>
+        </div>
+    </section>
 
     <footer>
         <p>© 2024 GOLDEN AGENCY. جميع الحقوق محفوظة.</p>
     </footer>
-    
+
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const hero = document.querySelector('#hero');
